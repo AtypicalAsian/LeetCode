@@ -6,8 +6,7 @@ class Solution {
         while ((p1 < nums1.length && (p2 < nums2.length))){
             if (nums1[p1] == nums2[p2]){
                 minCommon = Math.min(minCommon,nums1[p1]);
-                p1++;
-                p2++;
+                break;
             } else if (nums1[p1] < nums2[p2]){
                 p1++;
             } else{
